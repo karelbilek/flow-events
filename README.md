@@ -1,6 +1,6 @@
 ## Flow-events
 
-Simple wrapper for EventEmitters, so your code is typesafe while still using traditional node EventEmitter.
+Simple wrapper for EventEmitters for [Facebook's Flow](https://github.com/facebook/flow), so your code is typesafe while still using traditional node EventEmitter.
 
 Heavily inspired by [kimamula/ts-eventemitter](https://github.com/kimamula/ts-eventemitter) that does similar thing, for TypeScript.
 
