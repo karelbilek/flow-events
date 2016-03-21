@@ -13,7 +13,6 @@ Copy `flow-events.js` somewhere to your project. Then:
 
 'use strict';
 
-import 'babel-polyfill';
 import {EventEmitter} from 'events';
 import {Event0, Event1, Event2} from './flow-events';
 
