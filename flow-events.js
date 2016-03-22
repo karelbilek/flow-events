@@ -23,8 +23,8 @@ export class Event0 {
   removeAllListeners() {
     this.parent.removeAllListeners(this.type);
   }
-  emit() {
-    this.parent.emit(this.type);
+  emit(): boolean {
+    return this.parent.emit(this.type);
   }
 }
 
@@ -47,8 +47,8 @@ export class Event1<T1> {
   removeAllListeners() {
     this.parent.removeAllListeners(this.type);
   }
-  emit(arg1: T1) {
-    this.parent.emit(this.type, arg1);
+  emit(arg1: T1): boolean {
+    return this.parent.emit(this.type, arg1);
   }
 }
 
@@ -71,7 +71,7 @@ export class Event2<T1, T2> {
   removeAllListeners() {
     this.parent.removeAllListeners(this.type);
   }
-  emit(arg1: T1, arg2: T2) {
-    this.parent.emit(this.type, arg1, arg2);
+  emit(arg1: T1, arg2: T2): boolean {
+    return this.parent.emit(this.type, arg1, arg2);
   }
 }
