@@ -26,6 +26,9 @@ export class Event0 {
   emit(): boolean {
     return this.parent.emit(this.type);
   }
+  listenerCount(): number {
+    return this.parent.listenerCount(this.type);
+  }
 }
 
 export class Event1<T1> {
@@ -50,6 +53,9 @@ export class Event1<T1> {
   emit(arg1: T1): boolean {
     return this.parent.emit(this.type, arg1);
   }
+  listenerCount(): number {
+    return this.parent.listenerCount(this.type);
+  }
 }
 
 export class Event2<T1, T2> {
@@ -73,5 +79,8 @@ export class Event2<T1, T2> {
   }
   emit(arg1: T1, arg2: T2): boolean {
     return this.parent.emit(this.type, arg1, arg2);
+  }
+  listenerCount(): number {
+    return this.parent.listenerCount(this.type);
   }
 }
